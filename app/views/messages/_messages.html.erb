@@ -1,0 +1,16 @@
+
+<!DOCTYPE html>
+<div class="container">
+  <table align="center">
+    <tr>
+      <th class="text-center"><%= link_to "SMS"%></th>
+    </tr>
+    <% for message in @messages%>
+      <tr>
+        <td class="text-column">
+        <p> To: <%= message.to %><br/> On: <%= message.created_at %> </p><br/>
+        <p class = "trunq" > <span class="norm">Text:</span> <%= message.body %> </p></td>
+      </tr>
+    <%end%>
+  </table>
+</div>

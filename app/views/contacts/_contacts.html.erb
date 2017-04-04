@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+
+<div class="container">
+  <table align="center">
+    <tr>
+      <th class="th-name-column"><%= link_to "Name"%></th>
+      <th class="th-phone-column"><%= link_to "PhoneNumber"%></th>
+    </tr>
+    <% for contact in @contacts do%>
+    <tr>
+      <td class="name-column"><%= contact.name%></td>
+      <td class="phone-column"><%= contact.phone%> |<%= link_to "Edit", edit_user_contact_path(@user,contact) %> | <%= link_to "Delete", user_contact_path(@user, contact), :data => {:confirm => "Are you sure?", :method => "delete"} %>|<%= link_to "SMS"%> </td>
+    </tr>
+    <%end%>
+  </table>
+</div>

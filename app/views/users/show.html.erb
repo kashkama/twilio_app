@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<div class="container-fluid">
+  Hello,<%= current_user.email%><hr/>
+
+  <div class="row container">
+    <div class="row">
+      <%= render("/contacts/contacts")%><br/>
+    </div>
+    <div class="row text-center">
+      <%= link_to "New Contact", new_user_contact_path(current_user), class:"btn"%>
+    </div>
+  </div><br/><br/>
+
+  <div class="row container">
+      <div class="row text-center">
+      <%= render("/messages/messages")%>
+    </div><br/>
+    <div class="row text-center">
+      <%= link_to "Send SMS", new_user_message_path(current_user), class:"btn"%>
+    </div>
+    </div>
+</div>

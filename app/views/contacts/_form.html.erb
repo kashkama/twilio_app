@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<div class="text-center">
+  <%= render "layouts/errors", :object => @contact %>
+
+    <%= form_for [@user,@contact], remote: true do |f| %>
+      <%= f.label :name %>
+      <%= f.text_field :name %><br/>
+      <%= f.label :phone %>
+      <%= f.text_field :phone %><br/>
+      <%= f.submit %>
+    <% end %>
+</div>

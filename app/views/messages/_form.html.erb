@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<div class="text-center">
+  <%= render "layouts/errors", :object => @message %>
+
+    <%= form_for [@user,@message], remote: true do |f| %>
+      <%= f.label :from %>
+      <%= f.text_field :from %><br/><br/>
+      <%= f.label :to %>
+      <%= f.text_field :to %><br/><br/>
+      <%= f.label :body %>
+      <%= f.text_area :body, size: "24x6"%><br/>
+      <%= f.submit "Send" %>
+    <% end %>
+</div>

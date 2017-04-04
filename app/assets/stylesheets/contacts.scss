@@ -1,0 +1,41 @@
+// Place all the styles related to the contacts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+table {
+  background-color:#f1f1f1;
+}
+.th-name-column{
+  text-align: left;
+  width: 7em;
+  font-size: 17px;
+}
+.name-column{
+  text-align: left;
+  width: 7em;
+  font-size: 12px;
+  border: solid black;
+
+}
+
+.th-phone-column{
+  text-align: right;
+  width: 20em;
+  font-size: 17px;
+}
+.phone-column{
+  text-align: right;
+  width: 20em;
+  font-size: 12px;
+  border: solid black;
+}
+a:visited {
+    color: #0d01ef;
+  }
+
+// messagestable
+.text-column{
+  width: 30em;
+  font-size: 12px;
+  border: solid black;
+}
