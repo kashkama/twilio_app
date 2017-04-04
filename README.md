@@ -22,3 +22,11 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+# INSTRUCTIONS
+* install rails[5],ruby[2.2.3] 
+* have installed gem rake,rspec(for tests)
+* clone the repo
+* bundle install
+* rake db:setup
+* rails s and done
