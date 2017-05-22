@@ -24,9 +24,14 @@ Things you may want to cover:
 * ...
 
 # INSTRUCTIONS
-* install rails[5],ruby[2.2.3] 
+* install rails[5],ruby[2.2.3]
 * have installed gem rake,rspec(for tests)
 * clone the repo
 * bundle install
 * rake db:setup
 * rails s and done
+
+# HOW IT WORKS
+* visit twilio website and create an account .
+* get your API and SID keys.
+* go to ruby API source code and learn how to setup one.
